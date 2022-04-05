@@ -16,6 +16,15 @@ public class Account {
 	private String bankCode;
 	private String customerId;
 
+	public Account() {
+	}
+
+	public Account(String iban, String bankCode, String customerId) {
+		this.iban = iban;
+		this.bankCode = bankCode;
+		this.customerId = customerId;
+	}
+
 	public long getAccountId() {
 		return accountId;
 	}
